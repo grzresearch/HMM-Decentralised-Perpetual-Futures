@@ -71,6 +71,18 @@ retrieval and checks), `fetch_data_legacy.py` (the live fetch behind
 (alignment without look-ahead), `paper_figures.py` (the explanatory figures,
 each from a tested data function), `paths.py` (repository paths).
 
+## Contents
+
+- [Read this before you re-run anything](#read-this-before-you-re-run-anything)
+- [Every table and figure, and the command that rebuilds it](#every-table-and-figure-and-the-command-that-rebuilds-it)
+- [Reproducing](#reproducing)
+- [Data sources](#data-sources)
+- [What ships](#what-ships)
+- [Environment, seeds, determinism](#environment-seeds-determinism)
+- [Licence and citation](#licence-and-citation)
+- [Contact](#contact)
+- [Use of AI tools](#use-of-ai-tools)
+
 ---
 
 ## Read this before you re-run anything
@@ -400,6 +412,10 @@ scripts/                                 the scripts behind model_selection_exte
                                          msar_on_rate.json, two_hourly_refit.json and
                                          a31_evidence.json, and compare_artifacts.py
 tests/                                   unit tests, ground-truth recovery, manuscript guards
+Makefile                                 offline task runner (make help lists the targets)
+pyproject.toml, requirements.txt         package metadata; the pinned versions behind every number
+CITATION.cff                             citation metadata for GitHub's "Cite this repository"
+.github/workflows/ci.yml                 ruff and the test suite on Linux/x86-64
 ```
 
 `data/raw/` and `output/cache/` are gitignored: the first is large and
